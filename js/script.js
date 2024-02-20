@@ -12,6 +12,17 @@ let discount = 0;
 let prezzoBiglietto = chilometri * prezzo;
 console.log(prezzoBiglietto);
 
+// sconto 20 e 40% 
+
+if(age < 18) {
+ discount = prezzoBiglietto * 20 /100;
+}
+if(age > 65) {
+ discount = prezzoBiglietto * 40/100;
+}
+
+
+// output 
 
 const message = `
   il biglietto costa ${prezzoBiglietto - discount}€!
